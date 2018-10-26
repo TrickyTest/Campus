@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Oh yeah?</title>
+  <meta charset="utf-8"/>
+  <script src="callback.js"></script>
+  <style>
+  body{
+    color:#ffb400;
+    background-color:#0f0b00;
+  }
+  td{
+    color:#ffb400;
+    background-color:#2f1b00;
+  }
+  th{
+    background-color:#ffb400;
+    color:#0f0b00;
+  }
+  input{
+    color:#b4ff00;
+    background-color: #0b0f00;
+  }
+  </style>
+</head>
+
+
+<body>
+  <center>
+    <h1 id="t" style="color:#ffff00;">Start</h1>
+    <script>OhYeah(); console.log("OhYeah?");</script>
+  <table width=80% boder=5>
+    <caption id="kop">Original Setup</caption>
+    <tr>
+      <th>First Name</th>
+      <th>Last name</th>
+      <th>Hobbies</th>
+    </tr>
+    <tr valign=top>
+      <td id="FirstName" width=33%>John</td>
+      <td id="LastName" width=33%>Doe</td>
+      <td id="Hobby" width=33%>Reading</td>
+    </tr>
+    <tr>
+      <td colspan=3 align=center id=butcell>
+        <input type="button" onclick="callback_button()" value="Update Me!">
+      </td>
+    </tr>
+  </table>
+</center>
+</body>
+</html>
