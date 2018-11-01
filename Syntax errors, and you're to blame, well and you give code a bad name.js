@@ -6,7 +6,7 @@ const ynw=2018;
 // this is the asynchronous, Promise returning function
 // no validation for the current - birth > 2018 for now!!!
 async function getAgeBasedOnCurrentAndBirthYearPromise(current, birth) {
-  if (birth>current) throw "Fuck you! That's totally wrong dude!";
+  if (birth>current) throw "Fuck you! That's totally wrong, dude!";
   return current-birth;
 }
 
