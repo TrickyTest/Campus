@@ -25,20 +25,20 @@ function(){
 //*/
 
 // exp #2
-function myaccept(adone){  console.log(`2: Age is now ${adone}.`); }
-// function myaccept(aynw,ayob) { console.log(`2: Age is now ${aynw-ayob}.`); }
+//function myaccept(adone){  console.log(`2: Age is now ${adone}.`); }
+//function myaccept(aynw,ayob) { console.log(`2: Age is now ${aynw-ayob}.`); }
+function myaccept(adone,a2){  console.log(`2: Age is now ${adone[0]-adone[1]}.`); console.log(a2); }
 
-}
-function myreject(){
-  console.log("2: REJECT! ERROR! UH OH! HELP! DUMBASS! IDIOT!");
+function myreject(adone){
+  console.log(`2: REJECT! ERROR! UH OH! HELP! DUMBASS! IDIOT!\n\n ${adone[1]} is bigger than ${adone[0]}`);
 }
 
 function pa2(aynw,ayob){
   console.log(`2: Got: ${aynw},${ayob}!`)
   if (ayob<=aynw){
-      return Promise.resolve(aynw-ayob);
+      return Promise.resolve([aynw,ayob],1);
     } else {
-      return Promise.reject();
+      return Promise.reject([aynw,ayob]);
     }
   }
   //console.log(`pa2(${ynw},${yob}).then(<<myaccept>>,<<myreject>>);`);
